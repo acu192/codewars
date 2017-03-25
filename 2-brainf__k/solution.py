@@ -90,3 +90,13 @@ def brain_luck(code, inpt):
 
     return ''.join(output)
 
+
+if __name__ == '__main__':
+    # Echo until byte(255) encountered
+    print brain_luck(',+[-.,+]', 'Codewars' + chr(255)) == 'Codewars'
+
+    # Echo until byte(0) encountered
+    print brain_luck(',[.[-],]', 'Codewars' + chr(0)) == 'Codewars'
+
+    # Two numbers multiplier
+    print brain_luck(',>,<[>[->+>+<<]>>[-<<+>>]<<<-]>>.', chr(8) + chr(9)) == chr(72)

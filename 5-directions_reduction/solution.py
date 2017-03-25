@@ -15,3 +15,11 @@ def dirReduc(arr):
     lookup = {'N': 'NORTH', 'S': 'SOUTH', 'E': 'EAST', 'W': 'WEST'}
     return [lookup[c] for c in s]
 
+
+if __name__ == '__main__':
+
+    a = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
+    print  dirReduc(a) == ['WEST']
+
+    u=["NORTH", "WEST", "SOUTH", "EAST"]
+    print dirReduc(u) == ["NORTH", "WEST", "SOUTH", "EAST"]

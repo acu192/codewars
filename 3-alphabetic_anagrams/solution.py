@@ -68,3 +68,8 @@ def listPosition(word):
     """Return the anagram list position of the word"""
     return word_order(word)
 
+
+if __name__ == '__main__':
+    testValues = {'A' : 1, 'ABAB' : 2, 'AAAB' : 1, 'BAAA' : 4, 'QUESTION' : 24572, 'BOOKKEEPER' : 10743}
+    for word in testValues:
+        print listPosition(word) == testValues[word]

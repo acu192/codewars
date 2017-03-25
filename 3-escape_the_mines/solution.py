@@ -56,3 +56,29 @@ def solve(map, miner, exit):
 
     return []
 
+
+if __name__ == '__main__':
+    # Should return an empty array, since we're already at the goal
+    minemap = [[True]]
+    print solve(minemap, {'x':0,'y':0}, {'x':0,'y':0}) == []
+
+    # Should return the only correct move
+    minemap = [[True, False],
+               [True, True]]
+    print solve(minemap, {'x':0,'y':0}, {'x':1,'y':0}) == ['right']
+
+    # Should return the only moves necessary
+    print solve(minemap, {'x':0,'y':0}, {'x':1,'y':1}) == ['right', 'down']
+
+    # Should return a chain of moves to the right
+    minemap = [[True], [True], [True], [True]]
+    print solve(minemap, {'x':0,'y':0}, {'x':3,'y':0}) == ['right', 'right', 'right']
+
+    # Should return a chain of moves to the left
+    print solve(minemap, {'x':3,'y':0}, {'x':0,'y':0}) == ['left', 'left', 'left']
+
+    # Should return the right sequence of moves'
+    minemap = [[True, True, True],
+               [False, False, True],
+               [True, True, True]]
+    print solve(minemap, {'x':0,'y':0}, {'x':2,'y':0}) == ['down', 'down', 'right', 'right', 'up', 'up']

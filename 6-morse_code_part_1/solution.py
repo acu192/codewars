@@ -11,3 +11,7 @@ def decodeMorse(morseCode):
         word_lst.append(''.join(char_lst))
     return ' '.join(word_lst)
 
+
+if __name__ == '__main__':
+
+    print decodeMorse('.... . -.--   .--- ..- -.. .') == 'HEY JUDE'

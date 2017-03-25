@@ -38,3 +38,11 @@ def fusc(n):
         n //= 2
     return F(n // 2, 1, 1)
 
+
+if __name__ == '__main__':
+    print fusc(0) == 0
+    print fusc(1) == 1
+    print fusc((1<<1000) + 1) == 1001
+    print fusc((1<<1000) - 1) == 1000
+    print fusc((1<<1000) + 5) == 2996
+    print fusc((1<<1000) + 21) == 7973

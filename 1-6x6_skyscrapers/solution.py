@@ -230,3 +230,43 @@ def solve_puzzle(clues):
     visit_order = get_visit_order(clues)
     return r_solve_puzzle(clues, curr_soln, col_avail, row_avail, visit_order, 0)
 
+
+if __name__ == '__main__':
+    clues = ( 3, 2, 2, 3, 2, 1,
+              1, 2, 3, 3, 2, 2,
+              5, 1, 2, 2, 4, 3,
+              3, 2, 1, 2, 2, 4)
+    expected = (( 2, 1, 4, 3, 5, 6 ),
+                ( 1, 6, 3, 2, 4, 5 ),
+                ( 4, 3, 6, 5, 1, 2 ),
+                ( 6, 5, 2, 1, 3, 4 ),
+                ( 5, 4, 1, 6, 2, 3 ),
+                ( 3, 2, 5, 4, 6, 1 ))
+    actual = solve_puzzle(clues)
+    print actual == expected
+
+    clues = ( 0, 0, 0, 2, 2, 0,
+              0, 0, 0, 6, 3, 0,
+              0, 4, 0, 0, 0, 0,
+              4, 4, 0, 3, 0, 0)
+    expected = (( 5, 6, 1, 4, 3, 2 ),
+                ( 4, 1, 3, 2, 6, 5 ),
+                ( 2, 3, 6, 1, 5, 4 ),
+                ( 6, 5, 4, 3, 2, 1 ),
+                ( 1, 2, 5, 6, 4, 3 ),
+                ( 3, 4, 2, 5, 1, 6 ))
+    actual = solve_puzzle(clues)
+    print actual == expected
+
+    clues = ( 0, 3, 0, 5, 3, 4,
+              0, 0, 0, 0, 0, 1,
+              0, 3, 0, 3, 2, 3,
+              3, 2, 0, 3, 1, 0)
+    expected = (( 5, 2, 6, 1, 4, 3 ),
+                ( 6, 4, 3, 2, 5, 1 ),
+                ( 3, 1, 5, 4, 6, 2 ),
+                ( 2, 6, 1, 5, 3, 4 ),
+                ( 4, 3, 2, 6, 1, 5 ),
+                ( 1, 5, 4, 3, 2, 6 ))
+    actual = solve_puzzle(clues)
+    print actual == expected

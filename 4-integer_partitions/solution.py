@@ -41,3 +41,10 @@ def part(n):
 
     return "Range: {} Average: {:.2f} Median: {:.2f}".format(range, avg, median)
 
+
+if __name__ == '__main__':
+    print part(1) == "Range: 0 Average: 1.00 Median: 1.00"
+    print part(2) == "Range: 1 Average: 1.50 Median: 1.50"
+    print part(3) == "Range: 2 Average: 2.00 Median: 2.00"
+    print part(4) == "Range: 3 Average: 2.50 Median: 2.50"
+    print part(5) == "Range: 5 Average: 3.50 Median: 3.50"

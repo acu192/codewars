@@ -35,3 +35,11 @@ def fib(n):
   else:
       return pos_fib(-n) * (1 if (n % 2) == 1 else -1)
 
+
+if __name__ == '__main__':
+    print (fib(0) == 0)
+    print (fib(1) == 1)
+    print (fib(2) == 1)
+    print (fib(3) == 2)
+    print (fib(4) == 3)
+    print (fib(5) == 5)

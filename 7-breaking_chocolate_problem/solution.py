@@ -11,3 +11,7 @@ def rBreakChocolate(n, m):
 def breakChocolate(n, m):
     return rBreakChocolate(n, m)
 
+
+if __name__ == '__main__':
+    print breakChocolate(5, 5) == 24
+    print breakChocolate(1, 1) == 0

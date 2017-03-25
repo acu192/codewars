@@ -64,3 +64,10 @@ def fromAscii85(data):
     output = output[0:len(output)-padding]
     return output
 
+
+if __name__ == '__main__':
+    print toAscii85('easy') == '<~ARTY*~>'
+    print toAscii85('somewhat difficult') == '<~F)Po,GA(E,+Co1uAnbatCif~>'
+
+    print fromAscii85('<~ARTY*~>') == 'easy'
+    print fromAscii85('<~F)Po,GA(E,+Co1uAnbatCif~>') == 'somewhat difficult'

@@ -17,3 +17,11 @@ def determinant(matrix):
         sign = -sign
     return det
 
+
+if __name__ == '__main__':
+    m1 = [ [1, 3], [2,5]]
+    m2 = [ [2,5,3], [1,-2,-1], [1, 3, 4]]
+
+    print determinant([[1]]) == 1
+    print determinant(m1) == -1
+    print determinant(m2) == -20

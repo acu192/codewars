@@ -17,3 +17,10 @@ def to_camel_case(text):
                 l.append(c)
     return ''.join(l)
 
+
+if __name__ == '__main__':
+
+    print to_camel_case('') == ''
+    print to_camel_case("the_stealth_warrior") == "theStealthWarrior"
+    print to_camel_case("The-Stealth-Warrior") == "TheStealthWarrior"
+    print to_camel_case("A-B-C") == "ABC"

@@ -153,3 +153,6 @@ def decodeMorse(morseCode):
     message = ' '.join(word_lst)
     return message
 
+
+if __name__ == '__main__':
+    print decodeMorse(decodeBitsAdvanced('0000000011011010011100000110000001111110100111110011111100000000000111011111111011111011111000000101100011111100000111110011101100000100000')) == 'HEY JUDE'

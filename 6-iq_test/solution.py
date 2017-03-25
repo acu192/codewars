@@ -13,3 +13,8 @@ def iq_test(numbers):
         if len(items) == 1:
             return lst.index(items[0]) + 1
 
+
+if __name__ == '__main__':
+    print iq_test("2 4 7 8 10") == 3
+    print iq_test("1 2 2") == 1
+    print iq_test("1 2 1 1") == 2

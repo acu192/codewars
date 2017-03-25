@@ -12,3 +12,9 @@ def validBraces(s):
             break
     return s == ''
 
+
+if __name__ == '__main__':
+    print validBraces( "(){}[]" )
+    print not validBraces( "(}" )
+    print not validBraces( "[(])" )
+    print validBraces( "([{}])" )
