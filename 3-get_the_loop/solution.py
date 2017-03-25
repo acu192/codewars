@@ -12,6 +12,8 @@ def loop_size(node):
 
 if __name__ == '__main__':
     # Make a short chain with a loop of 3
+    class Node:
+        pass
     node1 = Node()
     node2 = Node()
     node3 = Node()

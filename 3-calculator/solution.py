@@ -50,11 +50,4 @@ class Calculator(object):
 
 
 if __name__ == '__main__':
-    c = Calculator()
-    s = '2 / 2 + 3 * 4 - 6'
-    print s
-    print c.evaluate(s)
-
-
-if __name__ == '__main__':
     print Calculator().evaluate("2 / 2 + 3 * 4 - 6") == 7
