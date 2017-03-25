@@ -11,3 +11,4 @@ def fusc(n):
         return fusc(n//2)
     else:             # odd
         return fusc(n//2) + fusc(n//2+1)
+

@@ -16,3 +16,4 @@ def to_camel_case(text):
             else:
                 l.append(c)
     return ''.join(l)
+

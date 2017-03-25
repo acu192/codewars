@@ -10,3 +10,4 @@ def sum_pairs(value_list, target_value):
             return [req, value]
         s.add(value)
     return None
+

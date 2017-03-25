@@ -34,3 +34,4 @@ def fib(n):
       return pos_fib(n)
   else:
       return pos_fib(-n) * (1 if (n % 2) == 1 else -1)
+

@@ -9,3 +9,4 @@ def countBits(n):
             i += 1
         n >>= 1
     return i
+

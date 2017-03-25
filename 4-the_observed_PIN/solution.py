@@ -8,3 +8,4 @@ def get_pins(observed):
     for ob in observed:
         combos = [combo + str(a) for combo in combos for a in adjacent[ob]]
     return combos
+

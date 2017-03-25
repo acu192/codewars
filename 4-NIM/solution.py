@@ -14,3 +14,4 @@ def choose_move(game_state):
         if (val ^ nim_sum) < val:
             return (i, val - (val ^ nim_sum))
     raise Exception("You can't win because no pile is suitable.")
+

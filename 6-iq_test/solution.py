@@ -12,3 +12,4 @@ def iq_test(numbers):
     for oddness, items in d.iteritems():
         if len(items) == 1:
             return lst.index(items[0]) + 1
+

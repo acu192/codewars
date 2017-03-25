@@ -10,3 +10,4 @@ def decodeMorse(morseCode):
             char_lst.append(MORSE_CODE[char])
         word_lst.append(''.join(char_lst))
     return ' '.join(word_lst)
+

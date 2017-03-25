@@ -152,3 +152,4 @@ def decodeMorse(morseCode):
         word_lst.append(''.join(char_lst))
     message = ' '.join(word_lst)
     return message
+

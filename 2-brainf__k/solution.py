@@ -89,3 +89,4 @@ def brain_luck(code, inpt):
             raise Exception("unknown instruction")
 
     return ''.join(output)
+

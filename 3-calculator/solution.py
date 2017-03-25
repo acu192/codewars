@@ -54,3 +54,4 @@ if __name__ == '__main__':
     s = '2 / 2 + 3 * 4 - 6'
     print s
     print c.evaluate(s)
+

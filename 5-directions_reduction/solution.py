@@ -14,3 +14,4 @@ def dirReduc(arr):
             break
     lookup = {'N': 'NORTH', 'S': 'SOUTH', 'E': 'EAST', 'W': 'WEST'}
     return [lookup[c] for c in s]
+

@@ -62,3 +62,4 @@ def solve_puzzle (clues):
     col_avail = [set(range(1, N+1)) for i in range(N)]
     row_avail = [set(range(1, N+1)) for i in range(N)]
     return r_solve_puzzle(clues, curr_soln, col_avail, row_avail, 0, 0)
+

@@ -11,3 +11,4 @@ def validBraces(s):
         if o == s:
             break
     return s == ''
+

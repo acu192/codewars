@@ -11,3 +11,4 @@ def cakes(recipe, available):
     # the answer is the minimum of the available multiples
     mults = {k: available[k] / recipe[k] for k in recipe}
     return min(mults.values())
+

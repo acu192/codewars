@@ -12,3 +12,4 @@ class Int(int):
 
 def add(val):
     return Int(val)
+

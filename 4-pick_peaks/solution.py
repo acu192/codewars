@@ -19,3 +19,4 @@ def pick_peaks(arr):
                 pos.append(i)
                 peaks.append(arr[i])
     return {'pos': pos, 'peaks': peaks}
+

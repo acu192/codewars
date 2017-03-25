@@ -40,3 +40,4 @@ def part(n):
     median = prods[n/2] if ((n % 2) == 1) else (prods[n/2-1] + prods[n/2]) / 2.0
 
     return "Range: {} Average: {:.2f} Median: {:.2f}".format(range, avg, median)
+

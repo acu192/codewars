@@ -37,3 +37,4 @@ def fusc(n):
     while (n % 2) == 0:
         n //= 2
     return F(n // 2, 1, 1)
+

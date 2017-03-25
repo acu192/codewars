@@ -10,3 +10,4 @@ def move_zeros(array):
     a = [val for val in array if not is_zero(val)]
     diff = (len(array) - len(a))
     return a + [0] * diff
+

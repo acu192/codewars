@@ -229,3 +229,4 @@ def solve_puzzle(clues):
     row_avail = [set(range(1, N+1)) for i in range(N)]
     visit_order = get_visit_order(clues)
     return r_solve_puzzle(clues, curr_soln, col_avail, row_avail, visit_order, 0)
+

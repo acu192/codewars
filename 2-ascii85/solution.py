@@ -63,3 +63,4 @@ def fromAscii85(data):
     output = ''.join(output)
     output = output[0:len(output)-padding]
     return output
+

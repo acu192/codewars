@@ -8,3 +8,4 @@ def loop_size(node):
         seen[node] = len(seen)
         node = node.next
     return len(seen) - seen[node]
+

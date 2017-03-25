@@ -55,3 +55,4 @@ def solve(map, miner, exit):
                 visited[n] = (here, direction)
 
     return []
+

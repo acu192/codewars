@@ -67,3 +67,4 @@ def word_order(word):
 def listPosition(word):
     """Return the anagram list position of the word"""
     return word_order(word)
+

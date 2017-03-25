@@ -156,3 +156,4 @@ def sudoku(puzzle):
     if len(solutions) < 1:
         raise Exception("{} solutions".format(len(solutions)))
     return solutions[0]
+
